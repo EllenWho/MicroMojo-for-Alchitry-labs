@@ -25,7 +25,7 @@ module mojo_top (
     reset_cond.in = ~rst_n; // input raw inverted reset signal
     rst = reset_cond.out;   // conditioned reset
     
-    led = c{rst,b0101010};             // turn LEDs off
+    led = c{rst,b0101010};             // MSB LED is connected to the reset button, and other LEDs follow the 0101010 pattern.
     spi_miso = bz;          // not using SPI
     spi_channel = bzzzz;    // not using flags
     avr_rx = bz;            // not using serial port
