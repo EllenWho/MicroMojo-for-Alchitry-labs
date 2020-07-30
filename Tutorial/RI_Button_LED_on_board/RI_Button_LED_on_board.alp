@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="RI_Button_LED_on_board" board="Mojo" language="Lucid" version="2">
+  <files>
+    <component>avr_interface.luc</component>
+    <component>cclk_detector.luc</component>
+    <component>reg_interface.luc</component>
+    <component>reset_conditioner.luc</component>
+    <component>uart_rx.luc</component>
+    <src top="true">mojo_top.luc</src>
+    <component>spi_slave.luc</component>
+    <component>uart_tx.luc</component>
+    <constraint lib="true">mojo.ucf</constraint>
+  </files>
+</project>
