@@ -39,7 +39,7 @@ module mojo_top (
   ) {
   
   const ADDRESS_VERSION = 100;
-  const ERROR_UNKNOW_COMMAND = 38730;
+  const ERROR_UNKNOW_COMMAND = 11206655;  //Au/Cu 11206655
   const NUM_INPUT = 8; // fixed by the board
   const NUM_LASERS = 6;
   const NUM_PWM = 6;
@@ -77,7 +77,7 @@ module mojo_top (
       dff position[NUM_SERVOS][16];
       
       // pwm
-      pwm pulsewm[NUM_PWM](#TOP(254),#DIV(9),#WIDTH(8));
+      pwm pulsewm[NUM_PWM](#TOP(254),#DIV(9),#WIDTH(8));//The period is: TOP / (CLK_FREQ / 2^DIV), change the div to 7 the frequency can be over 1k
       dff dutycycle[NUM_PWM][8];
       dff pwmupdate[NUM_PWM];
     }
