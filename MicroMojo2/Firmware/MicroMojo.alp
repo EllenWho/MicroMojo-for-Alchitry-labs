@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="MicroMojo" board="Mojo" language="Lucid" version="3">
+  <files>
+    <component>cclk_detector.luc</component>
+    <component>spi_peripheral.luc</component>
+    <src>analogreader.luc</src>
+    <component>reg_interface.luc</component>
+    <component>uart_rx.luc</component>
+    <component>servo.luc</component>
+    <src>lasertrigger.luc</src>
+    <component>uart_tx.luc</component>
+    <src>cam_synchro.luc</src>
+    <component>reset_conditioner.luc</component>
+    <component>pwm.luc</component>
+    <component>avr_interface.luc</component>
+    <src top="true">mojo_top.luc</src>
+    <component>counter.luc</component>
+    <src>servo_stop.luc</src>
+    <constraint lib="true">mojo.ucf</constraint>
+    <constraint>user.ucf</constraint>
+  </files>
+</project>
